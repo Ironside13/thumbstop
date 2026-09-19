@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Static and short-form video ad creative for small DTC brands. Six ads in 72 hours, $290, refunded if you don't run one.">
+<meta property="og:title" content="Thumbstop — ad creative in 72 hours">
+<meta property="og:description" content="Six static ads and two video ads for $290, delivered in 72 hours. Refunded if you don't put one live.">
+<meta property="og:type" content="website">
+<style>
+  *{box-sizing:border-box}
+  html{color-scheme:light dark}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Thumbstop — ad creative in 72 hours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --ground:   #F6F5F1;
+    --surface:  #FFFFFF;
+    --raised:   #EDEBE4;
+    --ink:      #14161C;
+    --muted:    #63687A;
+    --line:     #D8D5CC;
+    --signal:   #1F3BE0;
+    --signal-in:#FFFFFF;
+    --clay:     #B8532E;
+    --good:     #1B7A5A;
+
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --measure: 62ch;
+    --radius: 6px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:   #0E1016;
+      --surface:  #171A22;
+      --raised:   #20242E;
+      --ink:      #ECEDF2;
+      --muted:    #9AA0B2;
+      --line:     #2C313D;
+      --signal:   #7B8FFF;
+      --signal-in:#0E1016;
+      --clay:     #E08258;
+      --good:     #4FD3A5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:   #0E1016;
+    --surface:  #171A22;
+    --raised:   #20242E;
+    --ink:      #ECEDF2;
+    --muted:    #9AA0B2;
+    --line:     #2C313D;
+    --signal:   #7B8FFF;
+    --signal-in:#0E1016;
+    --clay:     #E08258;
+    --good:     #4FD3A5;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+
+  section { padding-block: 64px; }
+  section + section { border-top: 1px solid var(--line); }
+
+  h1, h2, h3 {
+    font-family: var(--display);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h1 { font-size: clamp(2.5rem, 7.5vw, 4.4rem); }
+  h2 { font-size: clamp(1.8rem, 4.4vw, 2.7rem); }
+  h3 { font-size: 1.125rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.25; }
+  p { margin: 0; max-width: var(--measure); }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .lede { font-size: 1.125rem; color: var(--muted); }
+
+  a { color: var(--signal); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--signal);
+    color: var(--signal-in);
+    text-decoration: none;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 0.98rem;
+    letter-spacing: -0.01em;
+    padding: 14px 24px;
+    border-radius: var(--radius);
+    border: 1px solid var(--signal);
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .btn.ghost {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--line);
+  }
+  .btn .arrow { font-family: var(--mono); font-weight: 400; }
+
+  a:focus-visible, .btn:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--clay);
+    outline-offset: 3px;
+  }
+
+  /* ---- masthead ---- */
+  .masthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-block: 22px;
+    border-bottom: 1px solid var(--line);
+  }
+  .logo {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .logo .dot {
+    width: 11px; height: 11px;
+    border-radius: 50%;
+    background: var(--signal);
+    display: inline-block;
+  }
+  .masthead .meta {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  /* ---- hero ---- */
+  .hero { padding-block: 56px 60px; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 44px;
+    align-items: start;
+  }
+  @media (min-width: 900px) {
+    .hero-grid { grid-template-columns: 1.05fr 0.95fr; gap: 56px; }
+  }
+  .hero h1 span { color: var(--signal); }
+  .hero-copy { display: flex; flex-direction: column; gap: 22px; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .cta-note { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+
+  /* ---- ad frame board ---- */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .frame {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+    color: #fff;
+    background: var(--raised);
+    min-width: 0;
+  }
+  .frame .ratio {
+    position: absolute;
+    top: 8px; left: 8px;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.42);
+    color: #fff;
+  }
+  .frame .hook {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: 0.86rem;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-shadow: 0 1px 10px rgba(0,0,0,0.45);
+  }
+  .f916 { aspect-ratio: 9 / 16; grid-row: span 2; }
+  .f45  { aspect-ratio: 4 / 5; }
+  .f11  { aspect-ratio: 1 / 1; }
+  .a { background: linear-gradient(145deg, #1F3BE0 0%, #0B1A78 60%, #14161C 100%); }
+  .b { background: linear-gradient(160deg, #B8532E 0%, #6E2A13 100%); }
+  .c { background: linear-gradient(200deg, #14161C 0%, #2C313D 100%); }
+  .d { background: linear-gradient(135deg, #2C313D 0%, #1F3BE0 120%); }
+  .e { background: linear-gradient(170deg, #E0A258 0%, #B8532E 100%); }
+  .board-cap {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--muted);
+    margin-top: 10px;
+    letter-spacing: 0.03em;
+  }
+
+  /* ---- generic grids ---- */
+  .cols {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) { .cols.two { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 720px) { .cols.three { grid-template-columns: repeat(3, 1fr); } }
+
+  .stack { display: flex; flex-direction: column; gap: 22px; }
+  .stack-sm { display: flex; flex-direction: column; gap: 12px; }
+
+  /* ---- the gap (price ladder) ---- */
+  .ladder { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+  .rung {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px 20px;
+    padding: 18px 20px;
+  }
+  @media (min-width: 640px) {
+    .rung { grid-template-columns: 170px 1fr auto; align-items: baseline; }
+  }
+  .rung + .rung { border-top: 1px solid var(--line); }
+  .rung .who { font-family: var(--display); font-weight: 700; font-size: 0.98rem; }
+  .rung .what { color: var(--muted); font-size: 0.92rem; max-width: none; }
+  .rung .price { font-family: var(--mono); font-size: 0.88rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .rung.us { background: color-mix(in srgb, var(--signal) 8%, var(--surface)); }
+  .rung.us .who { color: var(--signal); }
+  .src { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); margin-top: 12px; }
+  .src a { color: var(--muted); }
+
+  /* ---- steps ---- */
+  .step { display: flex; gap: 16px; align-items: flex-start; }
+  .step .n {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--signal);
+    border: 1px solid var(--signal);
+    border-radius: 50%;
+    width: 30px; height: 30px;
+    flex: 0 0 30px;
+    display: grid;
+    place-items: center;
+    margin-top: 2px;
+  }
+  .step p { font-size: 0.95rem; color: var(--muted); }
+
+  /* ---- pricing ---- */
+  .plans { display: grid; gap: 18px; grid-template-columns: 1fr; align-items: start; }
+  @media (min-width: 860px) { .plans { grid-template-columns: repeat(3, 1fr); } }
+  .plan {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .plan.featured {
+    border-color: var(--signal);
+    border-width: 2px;
+  }
+  .plan .tag {
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--signal);
+  }
+  .plan .amount {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: 2.2rem;
+    letter-spacing: -0.04em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .plan .per { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); }
+  .plan ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+  .plan li { font-size: 0.92rem; padding-left: 20px; position: relative; color: var(--ink); }
+  .plan li::before {
+    content: "→";
+    position: absolute; left: 0;
+    font-family: var(--mono);
+    color: var(--signal);
+    font-size: 0.8rem;
+  }
+  .plan .btn { justify-content: center; margin-top: auto; }
+
+  .guarantee {
+    border-left: 3px solid var(--good);
+    padding: 4px 0 4px 18px;
+  }
+  .guarantee strong { color: var(--good); }
+
+  /* ---- proof slots ---- */
+  .proof {
+    border: 1px dashed var(--line);
+    border-radius: var(--radius);
+    padding: 20px;
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .proof .slot {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--clay);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .proof p { font-size: 0.92rem; color: var(--muted); }
+
+  /* ---- faq ---- */
+  details {
+    border-bottom: 1px solid var(--line);
+    padding-block: 16px;
+  }
+  details summary {
+    cursor: pointer;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: baseline;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after {
+    content: "+";
+    font-family: var(--mono);
+    color: var(--signal);
+    font-weight: 400;
+  }
+  details[open] summary::after { content: "–"; }
+  details p { margin-top: 10px; font-size: 0.95rem; color: var(--muted); }
+
+  /* ---- closer ---- */
+  .closer {
+    background: var(--ink);
+    color: var(--ground);
+    border-radius: var(--radius);
+    padding: 44px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .closer h2 { color: var(--ground); }
+  .closer p { color: color-mix(in srgb, var(--ground) 72%, transparent); }
+  .closer .btn { background: var(--ground); color: var(--ink); border-color: var(--ground); }
+
+  footer {
+    padding-block: 32px 48px;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    justify-content: space-between;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="logo"><span class="dot"></span>Thumbstop</div>
+    <div class="meta">Performance creative · Meta &amp; TikTok · 72-hour turnaround</div>
+  </header>
+</div>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">For brands spending $3k–$20k / month on ads</p>
+        <h1>Your ads aren't <span>losing</span>. You've just run the same three out of angles.</h1>
+        <p class="lede">Thumbstop ships fresh static and short-form video ad concepts on a fixed weekly schedule, so your media buyer always has something new to test. No agency retainer. No casting calls. No four-week production cycle.</p>
+        <div class="cta-row">
+          <a class="btn" href="#pricing">Start with a Test Pack <span class="arrow">→</span></a>
+          <a class="btn ghost" href="#how">See how it works</a>
+        </div>
+        <p class="cta-note">6 statics + 2 videos in 72 hours · $290 · don't use one, don't pay</p>
+      </div>
+
+      <div>
+        <div class="board" aria-label="Sample ad frames in the formats delivered">
+          <div class="frame f916 a">
+            <span class="ratio">9:16</span>
+            <span class="hook">"I bought it for the packaging. I re-ordered for this."</span>
+          </div>
+          <div class="frame f45 b">
+            <span class="ratio">4:5</span>
+            <span class="hook">3 reasons it sold out</span>
+          </div>
+          <div class="frame f11 c">
+            <span class="ratio">1:1</span>
+            <span class="hook">Before / After</span>
+          </div>
+          <div class="frame f45 d">
+            <span class="ratio">4:5</span>
+            <span class="hook">Founder POV</span>
+          </div>
+          <div class="frame f11 e">
+            <span class="ratio">1:1</span>
+            <span class="hook">$28 vs $95</span>
+          </div>
+        </div>
+        <p class="board-cap">Every pack ships 9:16, 4:5 and 1:1 — placement-ready, named for your ad manager.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gap">
+    <div class="stack">
+      <div class="stack-sm">
+        <p class="eyebrow">The gap this fills</p>
+        <h2>Under $20k in monthly spend, nobody wants your business.</h2>
+        <p class="lede">Agencies quote retainers that eat your entire margin. Freelance marketplaces are a lottery on quality and timeline. So most small brands run the same four creatives until they fatigue, then wonder why CPA climbed.</p>
+      </div>
+
+      <div class="ladder">
+        <div class="rung">
+          <span class="who">Performance agency</span>
+          <span class="what">Strategy, media buying and creative — built for brands past $50k monthly spend.</span>
+          <span class="price">$5,000–$12,000 / mo</span>
+        </div>
+        <div class="rung">
+          <span class="who">UGC marketplace</span>
+          <span class="what">One creator, one video, per-asset pricing. Re-brief and re-shoot for every iteration.</span>
+          <span class="price">~$212 / video</span>
+        </div>
+        <div class="rung">
+          <span class="who">Gig marketplace</span>
+          <span class="what">Cheapest per asset. You carry the QA, the revisions and the risk.</span>
+          <span class="price">$25–$250 / asset</span>
+        </div>
+        <div class="rung us">
+          <span class="who">Thumbstop</span>
+          <span class="what">A standing creative pipeline: fixed monthly volume, fixed schedule, one person who learns your brand.</span>
+          <span class="price">$290–$1,690 / mo</span>
+        </div>
+      </div>
+      <p class="src">Market ranges as of Sept 2026 — agency retainers via <a href="https://www.yall.co/post/dtc-marketing-agency-cost">Y'all</a>; UGC per-video average via <a href="https://ppc.io/blog/ugc-pricing">ppc.io</a>. Not a claim about your results.</p>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="stack">
+      <div class="stack-sm">
+        <p class="eyebrow">How it works</p>
+        <h2>Four days from brief to assets in your ad account.</h2>
+      </div>
+      <div class="cols two">
+        <div class="step">
+          <span class="n">1</span>
+          <div class="stack-sm">
+            <h3>Send the brand, not a brief</h3>
+            <p>Store URL, your best-performing ad, your worst, and who buys. Ten minutes on a form. If you have ad account data, share the creative report — it changes what gets made.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="n">2</span>
+          <div class="stack-sm">
+            <h3>Angles before assets</h3>
+            <p>You get a one-page list of the concepts and hooks queued for production. You cut the ones you hate before a single frame is made.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="n">3</span>
+          <div class="stack-sm">
+            <h3>Pack ships in 72 hours</h3>
+            <p>Statics and videos, cut to 9:16, 4:5 and 1:1, named by concept and hook so you can read the results in your ad manager without guessing which file was which.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="n">4</span>
+          <div class="stack-sm">
+            <h3>Winners get iterated, losers get replaced</h3>
+            <p>On a monthly plan, every drop is built off what your account did with the last one. A hook that works gets five variants. One that doesn't never comes back.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof">
+    <div class="stack">
+      <div class="stack-sm">
+        <p class="eyebrow">Work</p>
+        <h2>Recent packs.</h2>
+      </div>
+      <div class="cols three">
+        <div class="proof">
+          <span class="slot">Slot 1 — replace</span>
+          <h3>Brand name · category</h3>
+          <p>Drop in 3–4 frames from a real pack, the angle behind them, and any number the client is happy for you to quote. No number is better than a made-up one.</p>
+        </div>
+        <div class="proof">
+          <span class="slot">Slot 2 — replace</span>
+          <h3>Brand name · category</h3>
+          <p>A before/after of their old creative next to yours reads stronger than a testimonial. Ask permission first.</p>
+        </div>
+        <div class="proof">
+          <span class="slot">Slot 3 — replace</span>
+          <h3>Spec work counts</h3>
+          <p>Until you have clients, show unsolicited concepts made for brands you'd like to work with — label them "concept, unaffiliated" and it still proves the craft.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="stack">
+      <div class="stack-sm">
+        <p class="eyebrow">Pricing</p>
+        <h2>Start with 72 hours, not a contract.</h2>
+        <p class="lede">Every plan is month to month. Cancel before the next drop and nothing else bills.</p>
+      </div>
+
+      <div class="plans">
+        <div class="plan featured">
+          <span class="tag">Start here</span>
+          <div>
+            <div class="amount">$290</div>
+            <div class="per">one-time · 72-hour delivery</div>
+          </div>
+          <h3>Test Pack</h3>
+          <ul>
+            <li>6 static ad concepts</li>
+            <li>2 short-form video ads</li>
+            <li>All three placement ratios</li>
+            <li>Hook + angle sheet</li>
+            <li>One free round of revisions</li>
+          </ul>
+          <a class="btn" href="#checkout-test">Book a Test Pack <span class="arrow">→</span></a>
+        </div>
+
+        <div class="plan">
+          <span class="tag">Most brands</span>
+          <div>
+            <div class="amount">$890</div>
+            <div class="per">per month · weekly drops</div>
+          </div>
+          <h3>Pipeline</h3>
+          <ul>
+            <li>20 statics + 6 videos monthly</li>
+            <li>New concepts every Monday</li>
+            <li>Iteration off your ad results</li>
+            <li>Shared folder, always current</li>
+            <li>48-hour turnaround on requests</li>
+          </ul>
+          <a class="btn ghost" href="#checkout-pipeline">Start Pipeline <span class="arrow">→</span></a>
+        </div>
+
+        <div class="plan">
+          <span class="tag">Scaling spend</span>
+          <div>
+            <div class="amount">$1,690</div>
+            <div class="per">per month · twice-weekly drops</div>
+          </div>
+          <h3>Volume</h3>
+          <ul>
+            <li>40 statics + 14 videos monthly</li>
+            <li>Two drops a week</li>
+            <li>Monthly creative teardown call</li>
+            <li>Landing page &amp; email creative</li>
+            <li>Priority queue</li>
+          </ul>
+          <a class="btn ghost" href="#checkout-volume">Start Volume <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="guarantee">
+        <p><strong>The 72-hour guarantee.</strong> If nothing in your Test Pack is worth putting live, say so within seven days and it's refunded in full. You keep the angle sheet either way.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="stack">
+      <div class="stack-sm">
+        <p class="eyebrow">Questions</p>
+        <h2>The ones that actually come up.</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Is this AI-generated?</summary>
+          <p>The video ads are built with AI generation and directed frame by frame — that's how the turnaround is 72 hours instead of three weeks, and why the price isn't $5k. Statics are composed from your own product photography. If your brand can't use AI-generated people in its ads, say so at the brief stage and the pack is built entirely from your assets instead.</p>
+        </details>
+        <details>
+          <summary>Do you run the ads too?</summary>
+          <p>No. Creative only. You or your media buyer handle spend, targeting and budget. That's deliberate — it keeps the price where it is and means there's no conflict about what to blame when something doesn't work.</p>
+        </details>
+        <details>
+          <summary>What do you need from me?</summary>
+          <p>Product photos or shipped samples, your store URL, and access to your creative report if you have one. Roughly fifteen minutes up front, then a thumbs up or down on the angle sheet each cycle.</p>
+        </details>
+        <details>
+          <summary>Who owns the files?</summary>
+          <p>You do, on delivery, in perpetuity. Source files included on monthly plans. The only thing asked in return is permission to show the work — and that's opt-in, not assumed.</p>
+        </details>
+        <details>
+          <summary>What if the ads don't perform?</summary>
+          <p>Nobody can promise a return on an ad account they don't control, and anyone who does is selling you something. What's promised is volume, speed and craft — enough new angles that you're testing your way to a winner instead of waiting for one.</p>
+        </details>
+        <details>
+          <summary>How many brands do you take?</summary>
+          <p>Capacity is limited and one client per category at a time, so a direct competitor can't buy the same angles a week later.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="closer">
+      <h2>Send one store URL. Get six ads back by Thursday.</h2>
+      <p>No call required. If the Test Pack lands, the monthly plan is one click. If it doesn't, you've lost three days and nothing else.</p>
+      <a class="btn" href="#checkout-test">Book a Test Pack — $290 <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <footer>
+    <span>Thumbstop — performance creative studio</span>
+    <span>hello@yourdomain.com</span>
+  </footer>
+</div>
+
+</body>
+</html>
